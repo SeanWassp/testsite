@@ -23,7 +23,7 @@
 define( 'DB_NAME', 'forge' );
 
 /** Database username */
-define( 'DB_USER', 'testsite' );
+define( 'DB_USER', 'testsite' ); 
 
 /** Database password */
 define( 'DB_PASSWORD', 'testsite@2022' );
