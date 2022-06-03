@@ -25,8 +25,8 @@ $hostname = $_SERVER['SERVER_NAME'];
 			// Wassp dev site
 			case 'testdev.co.za':
 					define('WP_ENV', 'development');
-					define( 'WP_HOME', 'testdev.co.za' );
-					define( 'WP_SITEURL', 'testdev.co.za' );
+					define( 'WP_HOME', 'http://139.59.190.212/' );
+					define( 'WP_SITEURL', 'http://139.59.190.212/' );
 					define('DB_HOST', 'localhost');
 					define('DB_NAME', 'forgedev');
 					define('DB_USER', 'sean');
