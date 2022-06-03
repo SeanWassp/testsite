@@ -18,24 +18,40 @@
  * @package WordPress
  */
 
-// ** Database settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'forge' ); 
-
-/** Database username */
-define( 'DB_USER', 'testsite' ); 
-
-/** Database password */
-define( 'DB_PASSWORD', 'testsite@2022' );
-
-/** Database hostname */
-define( 'DB_HOST', 'localhost' );
-
-/** Database charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8mb4' );
-
-/** The database collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
+/// ** MySQL settings ** //
+$hostname = $_SERVER['SERVER_NAME'];
+	switch ($hostname) {
+			
+			// Wassp dev site
+			case 'testdev.co.za':
+					define('WP_ENV', 'development');
+					define( 'WP_HOME', 'testdev.co.za' );
+					define( 'WP_SITEURL', 'testdev.co.za' );
+					define('DB_HOST', 'localhost');
+					define('DB_NAME', 'forgedev');
+					define('DB_USER', 'sean');
+					define('DB_PASSWORD', 'Scoomes@3576');
+			break;
+			// live site
+			case 'default':
+					define('WP_ENV', 'production');
+					define( 'WP_HOME', 'default' );
+					define( 'WP_SITEURL', 'default' );
+					define('DB_HOST', 'localhost');
+					define('DB_NAME', 'forge');
+					define('DB_USER', 'testsite');
+					define('DB_PASSWORD', 'testsite@2022');
+			break;
+			// match live site
+			default:
+					define('WP_ENV', 'production');
+					define( 'WP_HOME', 'default' );
+					define( 'WP_SITEURL', 'default' );
+					define('DB_HOST', 'localhost');
+					define('DB_NAME', 'forge');
+					define('DB_USER', 'testsite');
+					define('DB_PASSWORD', 'testsite@2022');
+ }
 
 /**#@+
  * Authentication unique keys and salts.
