@@ -23,10 +23,10 @@ $hostname = $_SERVER['SERVER_NAME'];
 	switch ($hostname) {
 			
 			// Wassp dev site
-			case 'http://139.59.190.212/':
+			case 'https://testdev.co.za/':
 					define('WP_ENV', 'development');
-					define( 'WP_HOME', 'http://139.59.190.212/' );
-					define( 'WP_SITEURL', 'http://139.59.190.212/' );
+					define( 'WP_HOME', 'https://testdev.co.za/' );
+					define( 'WP_SITEURL', 'https://testdev.co.za/' );
 					define('DB_HOST', 'localhost');
 					define('DB_NAME', 'forgedev');
 					define('DB_USER', 'sean');
