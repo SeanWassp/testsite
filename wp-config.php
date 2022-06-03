@@ -45,8 +45,8 @@ $hostname = $_SERVER['SERVER_NAME'];
 			// match live site
 			default:
 					define('WP_ENV', 'production');
-					define( 'WP_HOME', 'default' );
-					define( 'WP_SITEURL', 'default' );
+					define( 'WP_HOME', 'http://139.59.190.212/' );
+					define( 'WP_SITEURL', 'http://139.59.190.212/' );
 					define('DB_HOST', 'localhost');
 					define('DB_NAME', 'forge');
 					define('DB_USER', 'testsite');
